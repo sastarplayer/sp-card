@@ -33,7 +33,7 @@ function prev(){
       ctx.fillStyle = "#fff";
       ctx.fillText("STAR PLAYER ", 10, 25);
       ctx.font = "16px Arial";
-      ctx.fillText("Membership Card For  : ", 15, 45);
+      ctx.fillText("Business Card For  : ", 15, 45);
       ctx.drawImage(logo, 230, 3, 50, 50);
       ctx.fillStyle = "#000";
       ctx.fillText(name.innerHTML, 110, 90);
