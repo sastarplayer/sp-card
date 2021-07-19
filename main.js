@@ -24,7 +24,7 @@ function prev(){
 
       name.innerHTML = inName;
       birth.innerHTML = inBirth;
-      fieldYear.innerHTML = inField + "0" + inYear;
+      fieldYear.innerHTML = inField + "20" + inYear;
       num.innerHTML = inNum;
 
       ctx.fillStyle = "#159";
