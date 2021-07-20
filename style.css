@@ -6,6 +6,8 @@ body{
 }
 h3{
   color: #159;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 .back{
   margin-left: 10%;
@@ -117,6 +119,9 @@ ul li{
 #down{
   font-size: 18px;
 }
+#print{
+  font-size: 18px;
+}
 @media only screen and (max-width:768px) {
   .container, form{
     width: 90%;
@@ -129,6 +134,25 @@ ul li{
   #down{
     margin-right: 2em;
     margin-bottom: 2em;
-  }
+   }
+ }
+ @media print{
+  /* Hide  all other elements*/
+  body*{
+    visibility: hidden;
 
+  }
+  .back{
+    visibility: hidden;
+  }
+  /* Then display container elements*/
+  #result, #result * {
+    visibility: visible;
+  }
+  /* Adjust container position*/
+  #result{
+    position: absolute;
+    left: 0px;
+    top: 200px;
+  }
 }
